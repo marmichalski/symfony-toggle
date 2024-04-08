@@ -43,7 +43,7 @@ final class FeatureRepositoryFactoryPassTest extends TestCase
         ]);
         $container->register(Connection::class, Connection::class)
             ->setFactory([DriverManager::class, 'getConnection'])
-            ->addArgument(['url' => 'sqlite:///test.sqlite']);
+            ->addArgument(['driver' => 'pdo_sqlite', 'path' => 'test.sqlite']);
         $container->prependExtensionConfig('pheature_flags', ['driver' => 'dbal']);
 
         $featureRepositoryFactoryDefinition = $container->getDefinition(FeatureRepository::class);

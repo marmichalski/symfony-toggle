@@ -32,7 +32,7 @@ final class FeatureFinderFactoryPassTest extends TestCase
         ]);
         $container->register(Connection::class, Connection::class)
             ->setFactory([DriverManager::class, 'getConnection'])
-            ->addArgument(['url' => 'sqlite:///test.sqlite']);
+            ->addArgument(['driver' => 'pdo_sqlite', 'path' => 'test.sqlite']);
 
         $featureFinderFactoryDefinition = $container->getDefinition(FeatureFinder::class);
         $this->assertFalse($featureFinderFactoryDefinition->isAutowired());
