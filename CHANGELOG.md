@@ -1,6 +1,23 @@
 # Changelog
 
-## [0.7.1](https://github.com/pheature-flags/symfony-toggle/tree/0.7.1)
+## [0.8.0](https://github.com/pheature-flags/symfony-toggle/tree/0.8.0)
+
+[Full Changelog](https://github.com/pheature-flags/symfony-toggle/compare/0.7.1...0.8.0)
+
+**Implemented enhancements:**
+
+- Allow installation with Symfony 7 [\#53](https://github.com/pheature-flags/symfony-toggle/pull/53) (@ajgarlag)
+
+**Fixed bugs:**
+
+- \[Bug\]: 0.7.0 is not compatible with `pheature/toggle-core:^0.7`. [\#44](https://github.com/pheature-flags/symfony-toggle/issues/44)
+
+**Merged pull requests:**
+
+- Require pheature/\*:^0.8  [\#54](https://github.com/pheature-flags/symfony-toggle/pull/54) (@ajgarlag)
+- update php versions support [\#51](https://github.com/pheature-flags/symfony-toggle/pull/51) (@kpicaza)
+
+## [0.7.1](https://github.com/pheature-flags/symfony-toggle/tree/0.7.1) (2022-12-12)
 
 [Full Changelog](https://github.com/pheature-flags/symfony-toggle/compare/0.7.0...0.7.1)
 
