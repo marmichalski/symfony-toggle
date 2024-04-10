@@ -17,7 +17,7 @@ final class ToggleStrategyFactoryPass implements CompilerPassInterface
     {
         /** @var array<array<mixed>> $pheatureFlagsConfig */
         $pheatureFlagsConfig = $container->getExtensionConfig('pheature_flags');
-        $mergedConfig = array_merge(...$pheatureFlagsConfig);
+        $mergedConfig = array_replace(...$pheatureFlagsConfig);
 
         $toggleStrategyFactory = $container->register(
             ChainToggleStrategyFactory::class,
