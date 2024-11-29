@@ -22,7 +22,7 @@ final class PheatureFlagsRuntime implements RuntimeExtensionInterface
     /**
      * @throws FeatureNotFoundException
      */
-    public function isEnabled(string $feature, ConsumerIdentity $consumerIdentity = null): bool
+    public function isEnabled(string $feature, ?ConsumerIdentity $consumerIdentity = null): bool
     {
         return $this->toggle->isEnabled($feature, $consumerIdentity);
     }
